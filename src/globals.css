@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.link {
+  @apply underline text-blue-700 outline-offset-0 outline-transparent outline-1 hover:no-underline hover:outline hover:outline-offset-2 hover:outline-current;
+  transition: outline-offset 200ms ease;
+}
